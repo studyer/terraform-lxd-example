@@ -1,0 +1,14 @@
+#cloud-config
+users:
+  - default
+  - name: studyer
+    gecos: studyer
+    primary_group: studyer
+    home_dir: /home/studyer
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    ssh_import_id:
+    lock_passwd: false
+    ssh_authorized_keys:
+      - xxxx
